@@ -1,0 +1,8 @@
+m=c(8,10,16,14,2,16,10,2)
+mean(m)
+median(m)
+getmode=function(m)
+uniqv=unique(m)
+uniqv[which.max(tabulate(match(m,uniqv)))]
+r=getmode(m)
+print(r)

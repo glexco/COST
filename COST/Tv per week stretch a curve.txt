@@ -1,0 +1,5 @@
+x<-seq(-25,30,by=1)
+y<-dnorm(x,mean=20.5,sd=5.5)
+png(file="normal2.png")
+plot(x,y)
+dev.off()

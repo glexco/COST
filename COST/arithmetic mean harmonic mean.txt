@@ -1,0 +1,4 @@
+a=mean(c(25,75,50))
+print(a)
+b=1/(mean(1/a))
+print(b)

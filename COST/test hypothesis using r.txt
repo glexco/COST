@@ -1,0 +1,12 @@
+a<-c(9,8,7,4,6,8,7,10,8,10,6,7,7,8,9,6,5,8,5,6,8,7,8,5,5,8,7,6,6,4,5)
+n=33
+xbar=
+pm=5
+b=sd(a)
+z=((xbar-pm)/(b-sqrt(n)))
+z
+alpha=0.05
+z.half.alpha=qt(1-alpha/2,df=n-1)
+c(-z.half.alpha,z.half.alpha)
+z.alpha=qnorm(1-alpha)
+z.alpha

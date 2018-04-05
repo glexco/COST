@@ -1,0 +1,24 @@
+Y on X
+
+n=10
+x=c(6,5,8,8,7,6,10,4,9,7)
+y=c(8,7,7,10,5,10,8,6,8,6)
+plot(y,x,main="population",col="blue")
+cor(y,x)
+fit=lm(x~y)
+fit
+cat("\n\n")
+attributes(fit)
+
+
+X on Y
+
+n=10
+x=c(6,5,8,8,7,6,10,4,9,7)
+y=c(8,7,7,10,5,10,8,6,8,6)
+plot(y,x,main="population",col="blue")
+cor(x,y)
+fit=lm(y~x)
+fit
+cat("\n\n")
+attributes(fit)

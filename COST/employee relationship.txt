@@ -1,0 +1,6 @@
+s=c(12,38,5,8)
+d=c(7,19,3,1)
+c.data<-data.frame(s.d)
+c.data=table(s,d)
+print(c.data)
+print(chisq.test(c.data))

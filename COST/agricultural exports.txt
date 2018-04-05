@@ -1,0 +1,15 @@
+n=6
+h=c(2000,2001,2002,2003,2004,2005)
+w=c(51246,53659,53115,59364,61383,622958)
+plot(h,w,main="population",col="blue")
+cor(h,w)
+fit=1m(w~h)
+fit
+cat("\n\n")
+attributes(fit)
+a=data.frame(h=2006)
+r=predict(fit,a)
+print(r)
+png(file="trend.png")
+plot(w,h,col="red",main"trend",abline(1m(w~h)),cex=1.5, pch=16, xlab="year", ylab="turnover")
+dev.off()

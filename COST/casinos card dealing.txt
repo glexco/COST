@@ -1,0 +1,6 @@
+o=c(402,358,273,467)
+e=c(375,375,375,375)
+c.data<-data.frame(o,e)
+c.data=table(o,e)
+print(c.data)
+print(chisq.test(c.data))
